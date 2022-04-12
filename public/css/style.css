@@ -1,0 +1,247 @@
+/* Homepage */
+section.homepage {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/background-smandel.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+section.homepage .container {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.homepage .container span {
+  color: var(--warna-putih);
+  font-size: 2.5rem;
+  width: 70%;
+}
+
+section.homepage .container img {
+  width: 15%;
+}
+/* End Homepage */
+
+/* Daftar Ekstrakurikuler */
+section.ekskul .defenisi {
+  /* background-color: #eee; */
+  margin: 2rem auto;
+}
+
+section.ekskul .daftar-ekskul h3 {
+  margin-bottom: 1.5rem;
+}
+
+section.ekskul .daftar-ekskul .row {
+  margin-bottom: 1.5rem;
+}
+
+section.ekskul .daftar-ekskul .card {
+  background-color: var(--warna1);
+  padding: 2rem;
+  text-align: center;
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+section.ekskul .daftar-ekskul .card span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section.ekskul .daftar-ekskul .card a.btn {
+  background-color: var(--warna5);
+  color: var(--warna-putih);
+  text-align: center;
+  width: max-content;
+  margin: auto;
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
+}
+
+/* Berita Slider */
+section.berita {
+  margin-top: 1rem;
+}
+
+section.berita .card {
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+section.berita .card img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 25vh;
+  max-height: 25vh;
+  border-top-left-radius: var(--lengkung);
+  border-top-right-radius: var(--lengkung);
+}
+
+section.berita .card .card-body .kepala-kartu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section.berita .card .card-body .kepala-kartu h6.kategori {
+  line-height: unset;
+  font-weight: bold;
+  background-color: var(--warna1);
+  padding: 0 0.7rem;
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
+}
+
+section.berita .card .card-body .kepala-kartu span.waktu-posting {
+  color: var(--warna4);
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+
+section.berita .card .card-body p.judul-kartu {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+section.berita .card .card-body a.btn {
+  background-color: var(--warna5);
+  color: var(--warna-putih);
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
+}
+
+section.berita .berita-lain {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.berita .berita-lain a {
+  padding: 0.5rem 1rem;
+  background-color: var(--warna5);
+  color: var(--warna-putih);
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
+}
+/* End berita Slider */
+
+/* Pengumuman */
+section.pengumuman h3 {
+  margin-bottom: 1.3rem;
+}
+
+section.pengumuman .tabel-pengumuman {
+  margin: auto;
+}
+
+section.pengumuman table {
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+section.pengumuman table thead {
+  background-color: var(--warna1);
+  text-align: center;
+}
+
+section.pengumuman table tbody tr th {
+  text-align: center;
+}
+/* End Pengumuman */
+
+@media (max-width: 575.98px) {
+  section.homepage .container {
+    padding-top: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  section.homepage .container span {
+    width: 77%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  section.homepage .container img {
+    width: 15%;
+  }
+
+  section.ekskul .daftar-ekskul h3 {
+    margin: 1rem;
+  }
+
+  section.ekskul .daftar-ekskul .row {
+    margin-bottom: 0;
+  }
+
+  section.ekskul .daftar-ekskul .card {
+    margin: 1rem;
+  }
+
+  section.ekskul .daftar-ekskul .card a {
+    padding: 0.3rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section.homepage .container {
+    padding-top: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  section.homepage .container span {
+    width: 54%;
+    font-size: 1.4rem;
+  }
+
+  section.homepage .container img {
+    width: 16%;
+  }
+
+  section.ekskul .daftar-ekskul .row {
+    margin-bottom: 0;
+  }
+
+  section.ekskul .daftar-ekskul .card {
+    margin-bottom: 2rem;
+  }
+}

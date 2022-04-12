@@ -1,0 +1,56 @@
+section.berita {
+  margin-bottom: 2rem;
+}
+
+section.berita .gambar {
+  margin: 1rem auto;
+}
+
+section.berita img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  max-height: 70vh;
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+section.berita .isi .isi-kepala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+section.berita .isi .isi-kepala h6.kategori {
+  margin-bottom: 0;
+  line-height: unset;
+  font-weight: bold;
+  background-color: var(--warna1);
+  padding: 0.5rem 1rem;
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
+}
+
+section.berita .isi .isi-kepala span.waktu-posting {
+  align-self: flex-start;
+  color: var(--warna4);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+section.berita .isi .isi-badan {
+  margin-bottom: 1rem;
+}
+
+section.berita .isi .isi-badan h3.judul {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

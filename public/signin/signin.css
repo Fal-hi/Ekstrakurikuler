@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Noto Sans Display";
+  src: url("../font/NotoSansDisplay/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf");
+  src: url("../font/NotoSansDisplay/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf")
+      format("ttf"),
+    url("../font/NotoSansDisplay/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf")
+      format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+:root {
+  --warna1: #ffcc1d;
+  --warna2: #116530;
+  --warna3: #32cd32;
+  --warna4: #e8e8cc;
+  --warna5: #35cdfe;
+  --warna-tulisan: #191919;
+  --warna-putih: #fff;
+  --warna-abu-abu: #eee;
+  --warna-hitam: #000;
+  --ukuran-font: 0.95rem;
+  --lengkung: 0.5rem;
+  --lengkungO: 9999px;
+}
+
+body {
+  background: var(--warna3) !important;
+  height: 100%;
+}
+
+.signin {
+  margin-top: 8rem;
+}
+
+.signin .card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  border: 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.signin .card .card-header {
+  background-color: transparent;
+  border-bottom: 0;
+}
+
+.signin .card .card-header .tulisan-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.signin .card button.btn {
+  background-color: var(--warna5);
+  color: var(--warna-putih);
+}
+
+.signin .card .card-body label.form-label {
+  font-weight: bold;
+}
+
+.signin .card .card-body input.form-control {
+  background-color: transparent;
+  border: 2px solid var(--warna-putih);
+}

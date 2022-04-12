@@ -1,0 +1,49 @@
+Aktor
+1. admin
+2. Guru Pembina
+3. siswa
+
+alur sistem
+
+
+- admin 
+	: kelola akun => guru pembina => CRUD
+		    => siswa => CRUD
+
+        : kelola extrakurikuler => CRUD
+		field : id_extrakurikuler,id_pembina extrakurikuler, keterangan, jadwal, gambar
+
+	: kelola Informasi
+		=>   Informasi Lomba ======= CRUD field : id_kelola_lomba, id_extrakurikuler, judul_informasi, keterangan,jumlah, file
+		=>   Informasi siswa yg mengikuti lomba === ini akan muncul ketika pembina sudah di validasi
+		=>  kelola siswa yg mengikuti lomba => CRUD => data ini akan di inputkan ketika pembina sudah mem validasi siswa yg akan mengikuti lomba
+			filed : id_daftar_lomba, id_siswa, id_extrakurikuler, keterangan, file
+      
+	: kelola prestasi => CRUD (prestasi ini akan di inputkan ketika sudah ada siswa atau siswa yg berprestasi)
+		filed : id_prestasi, id_siswa, id_extrakurikuler, keterangan
+
+        : Laporan akhir
+		=> laporan siswa mengikuti extrakurikuler => keseluruhan extrakurikuler
+		=> laporan siswa yg menang lomba   => keseluruhan extrakurikuler
+
+note : untuk pembuatan file pdf siswa yang mengikuti lomba, admin membuat file pdf tersebut secara manual, setelah itu mengelola siswa yang mengikuti lomba
+
+
+- Guru Pembina
+	: list siswa yg bergabung => data ini hanya di lihat ketika siswa mendaftar extrakurikuler => read dan delete
+	: validasi lomba -> memvalidasi siswa yg mau mengikuti lomba 
+        : Laporan akhir
+		=> laporan siswa mengikuti extrakurikuler => per extrakurikuler guru pembina
+		=> laporan siswa yg menang lomba => per extrakurikuler guru pembina
+	
+
+siswa
+	: mendaftar extrakurikuler
+	: mendaftar lomba
+	: melihat informasi lomba
+	: melihat informasi extrakurikuler
+
+
+
+
+          

@@ -1,0 +1,42 @@
+button:focus,
+button:active {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+form .form-control:focus,
+form .form-select:focus,
+form textarea:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+h1.text-pendaftaran {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section.pendaftaran {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.pendaftaran form label {
+  font-weight: bold;
+}
+
+section.pendaftaran form .password {
+  margin-top: -1.3rem;
+}
+
+section.pendaftaran form input.form-control,
+section.pendaftaran form select.form-select {
+  border: 2px solid var(--warna4);
+}
+
+section.pendaftaran form button {
+  background-color: var(--warna5);
+  color: var(--warna-putih);
+  margin-top: 0.8rem;
+}
